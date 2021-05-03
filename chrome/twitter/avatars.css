@@ -1,0 +1,201 @@
+:root {
+	/* мои Аватарки: 
+     my-old-img:              https://pbs.twimg.com/profile_images/1250130789536337921/E6jFIHt7_200x200.jpg
+     my-vk-img:               https://pbs.twimg.com/profile_images/809088554534141953/0fM5COIa.jpg
+     ban:                     https://pbs.twimg.com/profile_images/1248147572532727808/dan2nIIj_200x200.jpg
+     zlob:                    https://pbs.twimg.com/profile_images/1250359767882760195/ofspg2ON_400x400.jpg
+     kirito:                  https://pbs.twimg.com/media/EV-zsMdX0AAdVzW?format=png&name=240x240
+     dark_ferns(дьявол):      https://pbs.twimg.com/profile_images/1246830020787568643/AAahD1lG_200x200.jpg
+     кун-маска:               https://pbs.twimg.com/media/EXVqrQeVAAEU62F?format=png&name=360x360
+    */
+    /* мои фоны:
+    
+    */
+    /* катины авы:
+    кот:                              https://pbs.twimg.com/profile_images/1089109146715279367/n5wWMC7m_200x200.jpg
+    ф дьявол:                         https://pbs.twimg.com/profile_images/1253655209840082947/SFWpjxyC_200x200.jpg
+    liny_piny (типа стар):            https://pbs.twimg.com/profile_images/1199685709524848640/sGaf5V8P_200x200.jpg
+    _MinA_Hope_ (фиолетовая):         https://pbs.twimg.com/profile_images/1254077516903571460/KEMYfVZ-_200x200.jpg
+    uERUStgEbaEr5bA(красная дьявол):  https://pbs.twimg.com/profile_images/1252496492138565633/Ip0EduCD_200x200.jpg
+    nagishio12(фиолетовая_девушка):   https://pbs.twimg.com/profile_images/1250368370890981376/BWlEv6IY_200x200.jpg
+    чибик:                            https://pbs.twimg.com/media/EXmOc1wWAAA5tah?format=png&name=360x360
+    picrew_katya:                     https://pbs.twimg.com/media/EdhR_OwX0AMA-eE?format=png&name=small
+    picrew_my:                        https://pbs.twimg.com/media/Ee_oLD6XgAA087w?format=png&name=small
+    */
+    /* катины шапки:
+    кровать с герляндой:   https://pbs.twimg.com/profile_banners/1252497621610123265/1587454152/600x200
+    */
+    /* редьма авы:
+    чибик:                   https://pbs.twimg.com/media/EWdsh87XsAEhOuc?format=png&name=900x900
+    */
+    /* лисаса авы:
+    чибик:                   https://pbs.twimg.com/profile_images/1250493100113498114/fISe1Hpp_200x200.jpg
+    */
+    /* лисаса шапки:
+    чибик:                   https://pbs.twimg.com/profile_banners/1249267032450904064/1587394307/600x200
+    */
+    /* пакет авы:
+    аниме:                   https://pbs.twimg.com/media/EWd0NguWkAQrf6n?format=png&name=360x360
+    */
+    --my-img: url(https://pbs.twimg.com/profile_images/1337375857158008833/GLC1-OJm_200x200.jpg);
+    
+    /*--katya-img: url(https://pbs.twimg.com/media/EXmOc1wWAAA5tah?format=png&name=360x360);*/
+    --katya-img: url(https://pbs.twimg.com/media/Ee_oLD6XgAA087w?format=png&name=small);
+    --katya-header: url(https://pbs.twimg.com/profile_banners/1252497621610123265/1587454152/600x200);
+    
+    --anya-img: url(https://pbs.twimg.com/media/EgB2eXPXkAARtXW?format=jpg&name=medium);
+    --anya-header: url(https://pbs.twimg.com/media/EgB2R9yWoAE7OPj?format=jpg&name=large);
+    
+    --prostoMin: url(https://pbs.twimg.com/media/EgrR2iaX0AEpg9Y?format=png&name=240x240);
+    --prostoMin-header: url(https://pbs.twimg.com/media/EgrRVAPWkAA6j8x?format=jpg&name=large);
+    
+    --redma: url(https://pbs.twimg.com/media/EWdsh87XsAEhOuc?format=png&name=900x900);
+    
+    --lisao: url(https://pbs.twimg.com/profile_images/1250493100113498114/fISe1Hpp_200x200.jpg);
+    --lisao-header: url(https://pbs.twimg.com/profile_banners/1249267032450904064/1587394307/600x200);
+    
+    --paket: url(https://pbs.twimg.com/media/EWd0NguWkAQrf6n?format=png&name=360x360);
+    
+    --gscop: url(https://pbs.twimg.com/media/EWWwmY5X0AADgUt?format=png&name=360x360);
+    --gscop-header: url(https://pbs.twimg.com/media/Egqd-x2XYAElnhB?format=jpg&name=large);
+    
+    --persik: url(https://pbs.twimg.com/media/EWR2mBMWkAAV0of?format=png&name=360x360);
+    --persik-header: url(https://pbs.twimg.com/media/Egq_gm0XcAEVxF5?format=jpg&name=small);
+    
+    --opinion: url(https://pbs.twimg.com/media/EXaLuUVXsAAiwJN?format=png&name=360x360);
+    
+    --darak: url(https://pbs.twimg.com/media/EXmOSBjXgAg_Ic_?format=png&name=360x360);
+    --darak-header: url(https://pbs.twimg.com/media/EXmWl87WAAEbWG6?format=png&name=small);
+    
+    --liter: url(https://pbs.twimg.com/media/Ee1QGf9XYAAqtq2?format=png&name=small);
+    --liter-header: url(https://pbs.twimg.com/media/EgqdC0hXkAAIs-B?format=jpg&name=4096x4096);
+    
+    --teni_cvechi: url(https://pbs.twimg.com/media/Ee1v4sGXkAEQNj7?format=png&name=small);
+    --trylala: url(https://pbs.twimg.com/media/EfJTLwwUwAgYXT7?format=png&name=small);
+    --woowjun: url(https://pbs.twimg.com/media/EgCdM8-WsAEyz2Y?format=jpg&name=medium);
+    --oneshandsome: url(https://pbs.twimg.com/media/EgDMD2mWsAAzNQj?format=png&name=900x900);
+    
+    --darya: url(https://pbs.twimg.com/media/Eq6d4dgXUAEFjVm?format=jpg&name=medium);
+    --darya-header: url(https://pbs.twimg.com/media/Eq6d-oRWMAQaSbY?format=jpg&name=large);
+    --MsBZZZZ-header: url(https://pbs.twimg.com/media/Eq6U2uNXIAIfsGC?format=jpg&name=large);
+    
+}
+a[aria-label="Профиль"] > div > div:nth-of-type(2) {
+    margin-left: 15px!important;
+}
+a[aria-label="Профиль"] > div > div:nth-of-type(1) {
+    border-radius: 50%!important;
+    width: 30px;
+    height: 30px;
+    content: var(--my-img)!important;
+    box-shadow: 0 0 10px 1px var(--glow-color);
+}
+
+a[href="/dolchemi666"] [style*="background-image"]:not([style*="emoji"]),
+a[href="/dolchemi666"] div.css-1dbjc4n.r-17gur6a.r-ahm1il.r-1udh08x.r-phn5h3,
+a[href="/dolchemi666/photo"] [style*="background-image"],
+div[style*='default_profile_images/default_profile_'] {
+    content: var(--darya);
+}
+.css-1dbjc4n.r-gu4em3.r-1adg3ll.r-1udh08x > .r-1p0dtai.r-1pi2tsx.r-1d2f490.r-u8s1d.r-ipm5af.r-13qz1uu {
+    content: var(--darya-header);
+}
+
+a[href="/DoLbOeB1802"] [style*="background-image"]:not([style*="emoji"]),
+a[href="/DoLbOeB1802"] div.css-1dbjc4n.r-17gur6a.r-ahm1il.r-1udh08x.r-phn5h3,
+a[href="/DoLbOeB1802/photo"] [style*="background-image"],
+div[style*='profile_images/1314510004238594048/PelNWRZv'] {
+    content: var(--anya-img);
+}
+a[href="/DoLbOeB1802/header_photo"] [style*="background-image"] {
+    content: var(--anya-header);
+}
+
+a[href="/_prosto_min_"] [style*="background-image"]:not([style*="emoji"]),
+a[href="/_prosto_min_"] div.css-1dbjc4n.r-17gur6a.r-ahm1il.r-1udh08x.r-phn5h3,
+a[href="/_prosto_min_/photo"] [style*="background-image"],
+div[style*='profile_images/1314986939137830913/HsVs7ZV4'] {
+    content: var(--prostoMin);
+}
+a[href="/_prosto_min_/header_photo"] [style*="background-image"] {
+    content: var(--prostoMin-header);
+}
+
+a[href="/redmaredka"] [style*="background-image"]:not([style*="emoji"]),
+a[href="/redmaredka"] div.css-1dbjc4n.r-17gur6a.r-ahm1il.r-1udh08x.r-phn5h3,
+a[href="/redmaredka/photo"] >[style*="background-image"],
+div[style*='profile_images/1295424409667284993/hJu5pcra'] {
+    content: var(--redma);
+}
+
+/*a[href="/lii_sao"] [style*="background-image"]:not([style*="emoji"]),*/
+/*a[href="/lii_sao"] div.css-1dbjc4n.r-17gur6a.r-ahm1il.r-1udh08x.r-phn5h3,*/
+/*a[href="/lii_sao/photo"] [style*="background-image"],*/
+/*div[style*='profile_images/1315676398498066432/X4zy-FO4'] {*/
+/*    content: var(--lisao);*/
+/*}*/
+a[href="/lii_sao/header_photo"] [style*="background-image"] {
+    content: var(--lisao-header);
+}
+
+a[href="/p0ket_"] [style*="background-image"]:not([style*="emoji"]),
+a[href="/p0ket_"] div.css-1dbjc4n.r-17gur6a.r-ahm1il.r-1udh08x.r-phn5h3,
+a[href="/p0ket_/photo"] >[style*="background-image"],
+div[style*='profile_images/1297958736166879232/8JLeJObM'] {
+    content: var(--paket);
+}
+
+a[href="/godnoscop"] [style*="background-image"]:not([style*="emoji"]),
+a[href="/godnoscop"] div.css-1dbjc4n.r-17gur6a.r-ahm1il.r-1udh08x.r-phn5h3,
+a[href="/godnoscop/photo"] [style*="background-image"],
+div[style*='profile_images/1106864386042404864/iLJ1wJKB'] {
+    content: var(--gscop);
+}
+a[href="/godnoscop/header_photo"] [style*="background-image"] {
+    content: var(--gscop-header);
+}
+
+a[href="/opinion_VI"] [style*="background-image"]:not([style*="emoji"]),
+a[href="/opinion_VI"] div.css-1dbjc4n.r-17gur6a.r-ahm1il.r-1udh08x.r-phn5h3,
+a[href="/opinion_VI/photo"] >[style*="background-image"],
+div[style*='profile_images/1237046691620061184/theTCZ_R'] {
+    content: var(--opinion);
+}
+
+a[href="/darak_389"] [style*="background-image"]:not([style*="emoji"]),
+a[href="/darak_389"] div.css-1dbjc4n.r-17gur6a.r-ahm1il.r-1udh08x.r-phn5h3,
+a[href="/darak_389/photo"] [style*="background-image"],
+div[style*='profile_images/1186201566098923520/lpss1BM7'] {
+    content: var(--darak);
+}
+a[href="/darak_389/header_photo"] [style*="background-image"] {
+    content: var(--darak-header);
+}
+
+a[href="/literabook"] [style*="background-image"]:not([style*="emoji"]),
+a[href="/literabook"] div.css-1dbjc4n.r-17gur6a.r-ahm1il.r-1udh08x.r-phn5h3,
+a[href="/literabook/photo"] [style*="background-image"],
+div[style*='profile_images/378800000608924041/50c4407c5b3d04eed0f5d4c81158bb5c_'] {
+    content: var(--liter);
+}
+a[href="/literabook/header_photo"] [style*="background-image"] {
+    content: var(--liter-header);
+}
+
+a[href="/teni_cvechi"] [style*="background-image"]:not([style*="emoji"]),
+a[href="/teni_cvechi"] div.css-1dbjc4n.r-17gur6a.r-ahm1il.r-1udh08x.r-phn5h3,
+a[href="/teni_cvechi/photo"] >[style*="background-image"],
+div[style*='profile_images/1308096372164435968/eeV0lQCq'] {
+    content: var(--teni_cvechi);
+}
+
+a[href="/TryLa1a"] [style*="background-image"]:not([style*="emoji"]),
+a[href="/TryLa1a"] div.css-1dbjc4n.r-17gur6a.r-ahm1il.r-1udh08x.r-phn5h3,
+a[href="/TryLa1a/photo"] >[style*="background-image"],
+div[style*='profile_images/1289669964794920961/oEhaJ79q'] {
+    content: var(--trylala);
+}
+
+a[href="/MsBZZZZ/header_photo"] [style*="background-image"] {
+    content: var(--MsBZZZZ-header);
+}
