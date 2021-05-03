@@ -1,0 +1,211 @@
+a[href*="/photo"][role="link"] {
+	box-shadow: 0 0 10px 1px var(--glow-color)!important;
+}
+
+a[aria-label="Профиль"] > div > div:nth-of-type(1) {
+	box-shadow: 0 0 10px 1px var(--glow-color)!important;
+}
+
+/* покраска лайка */
+div[data-testid*="like"]:hover > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) {
+    background: var(--like-color-min)!important;
+}
+.r-daml9f {
+    color: var(--like-color)!important;
+}
+/* покраска лайка END */
+
+.css-1dbjc4n:not(a).r-1slz7xr {
+    border-radius: 15px!important;
+    box-shadow: 0 0 20px 1px var(--glow-color)!important;
+}
+.css-1dbjc4n.r-1awozwy.r-kemksi.r-t23y2h.r-1jgb5lz.r-pm9dpa.r-1ye8kvj.r-1rnoaur.r-thmkab.r-s8kxc3.r-13qz1uu {
+    border-radius: 15px!important;
+    box-shadow: 0 0 20px 1px var(--glow-color)!important;
+}
+
+nav[aria-label="Основной"] > a > div:hover,
+nav[aria-label="Основной"] > div > div:hover {
+    box-shadow: 0 0 15px 1px var(--glow-color)!important;
+}
+
+.css-1dbjc4n.r-kemksi.r-1f0042m.r-qo02w8.r-1df82d0.r-1udh08x.r-1rnoaur.r-1r851ge.r-1xcajam {
+    border-radius: 15px!important;
+    box-shadow: 0 0 20px 1px var(--glow-color)!important;
+}
+.css-1dbjc4n.r-1adg3ll.r-1udh08x,
+.css-4rbku5.css-18t94o4.css-1dbjc4n.r-sdzlij.r-1loqt21.r-195d4m8.r-1udh08x.r-o7ynqc.r-6416eg.r-13qz1uu,
+.css-4rbku5.css-18t94o4.css-1dbjc4n.r-173mn98.r-sdzlij.r-1loqt21.r-1uopjct.r-19einr3.r-1udh08x.r-o7ynqc.r-6416eg.r-1y566p8 {
+    box-shadow: 0 0 15px 2px var(--glow-color)!important;
+}
+/* поиск в сообщениях */
+section[aria-label="Навигация по разделу"] > div:nth-of-type(2) > div > div > div > div {
+    box-shadow: 0 0 15px 1px var(--glow-color)!important;
+}
+/* подсветка в сообщениях боков на фоне */
+.css-1dbjc4n.r-1kqtdi0.r-13l2t4g.r-1phboty.r-1jgb5lz.r-1ye8kvj.r-1udh08x.r-13qz1uu {
+    box-shadow: 0 0 12px 1px var(--glow-color)!important;
+}
+.css-1dbjc4n.r-1l5qxre.r-m611by > div:nth-of-type(3),
+.css-1dbjc4n.r-1l5qxre.r-m611by > div:nth-of-type(4),
+.css-1dbjc4n.r-1l5qxre.r-m611by > div:nth-of-type(5),
+.css-1dbjc4n.r-1l5qxre.r-m611by > div:nth-of-type(6) {
+    box-shadow: 0 0 12px 1px var(--glow-color)!important;
+}
+a[href="/compose/tweet"][aria-label="Твитнуть"]:hover {
+    box-shadow: 0 0 15px 2px var(--glow-color)!important;
+}
+
+a[href="/compose/tweet"] > div > div > div[role="presentation"] {
+    transition: 0.5s!important;
+}
+a[href="/compose/tweet"] > div > div > div[role="presentation"]:hover {
+    transition: 0.5s!important;
+    box-shadow: 0 0 10px 1px var(--glow-color)!important;
+}
+[data-testid="tweetButtonInline"]:not([aria-disabled="true"]) {
+	transition: 0.5s!important;
+}
+[data-testid="tweetButtonInline"]:not([aria-disabled="true"]):hover {
+	transition: 0.5s!important;
+    box-shadow: 0 0 15px 2px var(--glow-color)!important;
+}
+
+a[href="/messages/compose"] {
+    transition: 0.5s!important;
+}
+a[href="/messages/compose"]:hover {
+    transition: 0.5s!important;
+    box-shadow: 0 0 13px 2px var(--glow-color)!important;
+}
+.css-4rbku5.css-18t94o4.css-1dbjc4n.r-sdzlij.r-1loqt21.r-ahm1il.r-1udh08x.r-o7ynqc.r-6416eg.r-13qz1uu {
+    box-shadow: 0 0 15px 2px var(--glow-color)!important;
+}
+.css-1dbjc4n.r-sdzlij.r-lwhw9o.r-1udh08x.r-cnnz9e {
+    box-shadow: 0 0 13px 1px var(--glow-color)!important;
+}
+div[aria-labelledby="modal-header"] {
+    box-shadow: 0 0 20px 2px var(--glow-color)!important;
+}
+.css-1dbjc4n.r-18p0rjw > .css-1dbjc4n.r-1awozwy.r-18u37iz {
+    transition: 0.5s!important;
+}
+.css-1dbjc4n.r-18p0rjw > .css-1dbjc4n.r-1awozwy.r-18u37iz:hover {
+    transition: 0.5s!important;
+    box-shadow: 0 0 10px 2px var(--glow-color)!important;
+}
+[data-testid="tweetButton"]:not([aria-disabled="true"]) {
+    transition: 0.5s!important;
+}
+[data-testid="tweetButton"]:not([aria-disabled="true"]):hover {
+    transition: 0.5s!important;
+    box-shadow: 0 0 15px 2px var(--glow-color)!important;
+}
+form[aria-label="Поиск в Твиттере"][role="search"] > div > div {
+    box-shadow: 0 0 15px 3px var(--glow-color)!important;
+}
+[data-testid="placementTracking"] > div > div[data-testid*="unfollow"] {
+    transition: 0.7s!important;
+    box-shadow: 0 0 20px 1px var(--glow-color)!important;
+}
+[data-testid="placementTracking"] > div > div[data-testid*="unfollow"]:hover {
+    transition: 0.7s!important;
+    box-shadow: 0 0 20px 1px #CA2055!important;
+}
+.css-1dbjc4n.r-obd0qt.r-1pz39u2.r-1777fci.r-1joea0r.r-1vsu8ta.r-18qmn74 div[role="button"][data-testid*="unfollow"] {
+    transition: 0.7s!important;
+    box-shadow: 0 0 20px 1px var(--glow-color)!important;
+}
+.css-1dbjc4n.r-obd0qt.r-1pz39u2.r-1777fci.r-1joea0r.r-1vsu8ta.r-18qmn74 div[role="button"][data-testid*="unfollow"]:hover {
+    transition: 0.7s!important;
+    box-shadow: 0 0 20px 1px #CA2055!important;
+}
+.css-1dbjc4n.r-1oqcu8e > div:nth-of-type(1) > div > div[data-testid*="unfollow"] {
+    transition: 0.7s!important;
+    box-shadow: 0 0 20px 0px var(--glow-color)!important;
+}
+.css-1dbjc4n.r-1oqcu8e > div:nth-of-type(1) > div > div[data-testid*="unfollow"]:hover {
+    transition: 0.7s!important;
+    box-shadow: 0 0 20px 0px #CA2055!important;
+}
+[data-testid="UserCell"] > div > div:nth-of-type(2) > div > div:nth-of-type(2) > div[data-testid*="unfollow"] {
+    transition: 0.7s!important;
+    box-shadow: 0 0 20px 0px var(--glow-color)!important;
+}
+[data-testid="UserCell"] > div > div:nth-of-type(2) > div > div:nth-of-type(2) > div[data-testid*="unfollow"]:hover {
+    transition: 0.7s!important;
+    box-shadow: 0 0 20px 0px #CA2055!important;
+}
+
+form[aria-label="Поиск в Твиттере"][role="search"] > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2) {
+    transition: 0.5s!important;
+}
+form[aria-label="Поиск в Твиттере"][role="search"] > div:nth-of-type(2) > div > div > div:nth-of-type(1) > div:nth-of-type(2):hover {
+    transition: 0.5s!important;
+    box-shadow: 0 0 20px 1px var(--glow-color)!important;
+}
+.css-1dbjc4n.r-15d164r.r-1x0uki6 > div > div {
+    transition: 0.3s!important;
+}
+.css-1dbjc4n.r-15d164r.r-1x0uki6 > div > div:hover {
+    transition: 0.3s!important;
+    box-shadow: inset 0 0 35px 0px var(--glow-color)!important;
+}
+
+.css-1dbjc4n.r-15d164r.r-1x0uki6 > div:hover {
+    box-shadow: 0 0 20px 0px var(--glow-color)!important;
+}
+
+/* При наведении на имя, ава подсветка */
+.css-1dbjc4n.r-1oqcu8e > div:nth-of-type(1) > a {
+    box-shadow: 0 0 20px 0px var(--glow-color)!important;
+}
+
+a[aria-label="Читатели, которых вы знаете"] > div > div:nth-of-type(1) > div {
+    box-shadow: 0 0 6px 1px var(--glow-color)!important;
+}
+
+div[role="button"][data-testid="SideNav_AccountSwitcher_Button"] > div:nth-of-type(1) > div:nth-of-type(1) {
+    box-shadow: 0 0 10px 1px var(--glow-color)!important;
+}
+
+[aria-label="Еще"][data-testid="userActions"]:hover {
+    box-shadow: 0 0 13px 0px var(--glow-color)!important;
+}
+
+[aria-label="Включить уведомления о твитах"]:hover {
+    box-shadow: 0 0 13px 0px var(--glow-color)!important;
+}
+
+[aria-label="Сообщение"]:hover {
+    box-shadow: 0 0 13px 0px var(--glow-color)!important;
+}
+
+[aria-label="Есть новые твиты. Нажмите клавишу с точкой (.), чтобы перейти в начало ленты и просмотреть их"] {
+    transition: 0.3s!important;
+}
+
+[aria-label="Есть новые твиты. Нажмите клавишу с точкой (.), чтобы перейти в начало ленты и просмотреть их"]:hover {
+    transition: 0.3s!important;
+    box-shadow: 0 0 30px 2px var(--glow-color)!important;
+}
+
+[data-testid="messageEntry"] > div > a {
+	box-shadow: 0 0 15px 1px var(--glow-color)!important;
+}
+
+[aria-label="Список реакций пользователя"] [role="presentation"] {
+    box-shadow: 0 0 10px 1px var(--glow-color)!important;
+}
+
+[style*="flex-basis"] > [role="presentation"] {
+    box-shadow: 0 0 15px 1px var(--glow-color)!important;
+}
+
+[href="/compose/tweet"] [style*="flex-basis"] > div > div {
+    box-shadow: 0 0 12px 1px var(--glow-color)!important;
+}
+/* подсветка правого меню в поиске */
+.css-1dbjc4n.r-1l5qxre.r-m611by > div:not(.r-1h3ijdo) {
+    box-shadow: 0 0 12px 1px var(--glow-color)!important;
+}
