@@ -1,0 +1,394 @@
+/* глобальные переменные */
+:root {
+    --color: #887bd3; /* основной цвет */
+    --color-count-notyfi: #887bd3; /* (верх) количество уведомлении цвет */
+    
+    --color-like-author: #6815d5; /* коментарии лайк автора видео */
+    --color-new-video-left: #00ffc0; /* круг нового видео (меню) */
+    
+    --color-video-channel-name: #0055ff; /* имя канала (видео)*/
+    --color-video-channel-name-hover: #0eb97b; /* имя канала при наведении (видео)*/
+    
+    --color-channel-name-hover: #0eb97b; /* канал при наведении на название канала цвет */
+    --color-channel-subscribers-hover: #0eb97b; /* канал при наведении на количество подписчиков канала цвет */
+    
+    --color-channel-icon-border-hover: #00c0ff; /* канал при наведении на значёк канала круг цвет */
+    --color-channel-icon-border-width: 3px; /* канал при наведении на значёк канала круг ширина */
+    
+    --color-on-channel-active-hover: #0eb97b; /* на канале (активая при наведении зелёная) */
+    --color-on-channel-not-active-hover: #0eb97b; /* на канале (все кроме активной при наведении зелёные) */
+    
+    --color-like: #3af3a2;
+    --color-dizlike: #d00288;
+}
+#logo-icon .style-scope.yt-icon path[fill="#FF0000"] {
+	fill: var(--color)!important;
+}
+ytd-author-comment-badge-renderer {
+    padding-left: 5px;
+}
+/* кнопка подписаться */
+ytd-subscribe-button-renderer[new-subscribe-color] paper-button.ytd-subscribe-button-renderer {
+    background-color: var(--color);
+}
+/* кнопка подписаться */
+paper-button.ytd-subscribe-button-renderer {
+    background-color: var(--color);
+} 
+/* кнопка подписаться при наведении */
+ytd-subscribe-button-renderer[new-subscribe-color]:hover #button.ytd-subscribe-button-renderer:not([subscribed]) {
+    background-color: #1285d3;
+}
+/* бодер для аккаунта */
+yt-img-shadow.style-scope.ytd-topbar-menu-button-renderer {
+    border: 2px solid var(--color);
+}
+/* меню */
+ytd-mini-guide-entry-renderer[active_] path.style-scope {
+    color: var(--color);
+}
+/* меню2 */
+#guide[opened].style-scope.ytd-app yt-icon.style-scope.ytd-app {
+    fill: var(--color);
+}
+ytd-mini-guide-entry-renderer[active_] .title.ytd-mini-guide-entry-renderer {
+    color: var(--color);
+}
+/* стрим идёт (меню) */
+yt-icon.guide-entry-badge {
+     fill: var(--color);
+}
+/* кнопка YouTube (главная)*/
+path.ytd-topbar-logo-renderer {
+    fill: var(--color);
+}
+/* кнопка YouTube текст (главная)*/
+#logo-icon-container.ytd-topbar-logo-renderer #youtube-paths.ytd-topbar-logo-renderer path.ytd-topbar-logo-renderer {
+    fill: var(--color);
+}
+/* кнопка RU текст (главная)*/
+#country-code.style-scope.ytd-topbar-logo-renderer {
+    color: var(--color);
+}
+/* Сейчас в праямом эфире */
+span.ytd-badge-supported-renderer {
+    color: var(--color);
+}
+/* бордюр от прямого эфира (Сейчас в праямом эфире) */
+.badge-style-type-live-now.ytd-badge-supported-renderer{
+    border-color: var(--color);
+}
+/* Подтвержденно */
+yt-icon.ytd-badge-supported-renderer {
+    fill: var(--color);
+}
+/* чужой код (лайк/дизлайк) */
+#like-bar.ytd-sentiment-bar-renderer {
+    background: var(--color-like) !important;
+} /* Like bar */
+#container.ytd-sentiment-bar-renderer {
+    background: var(--color-dizlike) !important;
+} /* Dislike bar */
+ytd-menu-renderer ytd-toggle-button-renderer.style-default-active[is-icon-button]:nth-of-type(1) {
+    color: var(--color-like);
+} /* Liked button */
+ytd-menu-renderer ytd-toggle-button-renderer.style-default-active[is-icon-button]:nth-of-type(2) {
+    color: var(--color-dizlike);
+} /* Disliked button */;
+/* чужой код (лайк/дизлайк) END */
+/* видео */
+.ytp-swatch-background-color {
+    background-color: var(--color);
+}
+.ytp-play-progress {
+    background-color: var(--color);
+}
+.ytp-scrubber-button {
+    background-color: var(--color);
+}
+.ytp-settings-button.ytp-hd-quality-badge:after {
+    background-color: var(--color);
+}
+div.ytp-sb-subscribe {
+    background-color: var(--color);
+}
+sup.ytp-swatch-color {
+    color:var(--color);
+}
+/* звук в видео (точка) */
+div.ytp-volume-slider-handle {
+    background: var(--color);
+}
+/* звук в видео (полоска) */
+.ytp-volume-slider-handle:before {
+    background: var(--color);
+}
+/* авто воспроизведение и анотации */
+.ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox {
+    background: var(--color);
+}
+/* для выделения цветом активной нажатой кнопки меню */
+ytd-guide-entry-renderer[active] yt-icon.guide-icon {
+    fill: var(--color);
+}
+/* полоска снизу (тип видео просмотренно) */
+#progress.style-scope, .ytd-thumbnail-overlay-resume-playback-renderer {
+    background: var(--color);
+}
+/* Автовоспроизвидение (справа сбоку) */
+paper-toggle-button[checked]:not([disabled]) .toggle-button.paper-toggle-button {
+    background: var(--color);
+}
+/* видео END */
+/* круг нового видео (меню) */
+#newness-dot.ytd-guide-entry-renderer {
+    background: var(--color-new-video-left);
+}
+/* кнопка Попробовать YouTube Gaming */
+#button.ytd-button-renderer.style-primary {
+    background: var(--color);
+}
+/* далее (лента) */
+ytd-button-renderer #button.ytd-button-renderer:hover {
+    color: var(--color);
+}
+/* на канале (главная и тд) */
+paper-tab.ytd-c4-tabbed-header-renderer.iron-selected[aria-selected="true"] {
+    color: var(--color);
+}
+/* главная на канале (Полоска под) */
+#selectionBar.paper-tabs {
+    border-bottom: 2px solid var(--color);
+}
+/* Воспроизвести все */
+yt-icon.ytd-button-renderer:hover {
+    color: var(--color);
+}
+/* на канале (активая при наведении зелёная) */
+paper-tab.ytd-c4-tabbed-header-renderer.iron-selected:hover {
+    color: var(--color-on-channel-active-hover);
+}
+/* поиск на канале */
+button.style-scope.yt-icon-button:hover {
+    color: var(--color);
+}
+/* на канале (все кроме активной при наведении зелёные) */
+paper-tab.ytd-c4-tabbed-header-renderer:hover {
+    color: var(--color-on-channel-not-active-hover);
+}
+/* часы и время при наводке на видео */
+#hover-ovestyle-scope, .ytd-thumbnail {
+    color: var(--color);
+}
+/* первые два верхних компонента (полоска снизу (камера и 9 квадратов) )*/
+ytd-topbar-menu-button-renderer.style-scope.ytd-masthead.style-default:hover {
+    border-bottom: 2px solid var(--color);
+}
+/* первые два верхних компонента (цвет (камера и 9 квадратов) )*/
+#button.style-scope.ytd-topbar-menu-button-renderer:hover {
+    color: var(--color);
+}
+/* последние два верхних компонента (цвет (мессанджер и уведомления) )*/
+#button.style-scope.ytd-notification-topbar-button-renderer:hover {
+    color: var(--color);
+}
+/* мессанджер (полоска снизу)*/
+ytd-notification-topbar-button-renderer.style-scope.ytd-masthead.notification-button-style-type-conversation-default:hover {
+    border-bottom: 2px solid var(--color);
+}
+/* уведомления (полоска снизу)*/
+ytd-notification-topbar-button-renderer.style-scope.ytd-masthead.notification-button-style-type-default:hover {
+    border-bottom: 2px solid var(--color);
+}
+/* меню: полоска слева везде*/
+ytd-guide-entry-renderer.style-scope:hover {
+    border-left: 3px solid var(--color);
+}
+/* меню: иконка загарается при наведении */
+ytd-guide-entry-renderer.style-scope:hover yt-icon.guide-icon {
+    fill: var(--color);
+}
+/* меню: название (Главная) загарается при наведении */
+ytd-guide-entry-renderer.style-scope:hover span.title.style-scope.ytd-guide-entry-renderer {
+    color: var(--color);
+}
+/* меню: полоска вокруг картинки везде при наведении */
+ytd-guide-entry-renderer.style-scope:hover .style-scope.ytd-guide-entry-renderer.no-transition {
+    border: 2px solid var(--color);
+}
+/* меню три полоски голубой */
+#button.style-scope.yt-icon-button[aria-pressed="true"] yt-icon.style-scope.ytd-masthead {
+    fill: var(--color);
+}
+/* кнопка поиска (голубой при навидении) */
+button.style-scope, .ytd-searchbox:hover {
+    fill: var(--color);
+}
+/*ytd-guide-section-renderer[is-guide-refresh] #guide-section-title.ytd-guide-section-renderer {*/
+/*    //color:#0099FF;*/
+/*}*/
+.ytp-chrome-controls .ytp-button[aria-pressed]:after {
+    background-color: #0099FF;
+}
+/* видео (Ещё) */
+yt-formatted-string.more-button.style-scope.ytd-video-secondary-info-renderer:hover {
+    color: var(--color);
+}
+/* упорядочить */
+paper-button.dropdown-trigger:hover .style-scope.yt-dropdown-menu, #icon-label.yt-dropdown-menu:hover {
+    fill: var(--color);
+    color: var(--color);
+}
+/* поделиться и сохранить */
+a.yt-simple-endpoint.ytd-button-renderer:hover, #text.style-scope.ytd-button-renderer.style-default.size-default:hover {
+    fill: var(--color);
+    color: var(--color);
+}
+/* видео три кружочка */
+yt-icon.style-scope.ytd-menu-renderer:hover{
+    fill: var(--color);
+}
+/* видео три кружочка (подменю) */
+paper-item.style-scope.ytd-menu-service-item-renderer:hover yt-icon.style-scope.ytd-menu-service-item-renderer {
+    fill: var(--color);
+}
+/* видео три кружочка поработать над переводом */
+paper-item.style-scope.ytd-menu-navigation-item-renderer:hover yt-icon.style-scope.ytd-menu-navigation-item-renderer {
+    fill: var(--color);
+}
+/* количество просмотров (видео) */
+span.view-count.style-scope.yt-view-count-renderer {
+    color: var(--color);
+}
+/* количество коминтариев (видео) */
+yt-formatted-string.ytd-comments-header-renderer {
+    color: var(--color);
+}
+/* сылки */
+a.yt-simple-endpoint.style-scope.yt-formatted-string {
+    color: var(--color);
+}
+/* свернуть (видео) */
+paper-button.style-scope.ytd-expander, yt-formatted-string.less-button.style-scope.ytd-video-secondary-info-renderer {
+    color: var(--color);
+}
+/* имя канала (видео)*/
+yt-formatted-string.style-scope.ytd-video-owner-renderer a.yt-simple-endpoint.yt-formatted-string {
+    color: var(--color-video-channel-name);
+}
+/* имя канала при наведении (видео)*/
+yt-formatted-string.style-scope.ytd-video-owner-renderer a.yt-simple-endpoint.yt-formatted-string:hover{
+    color: var(--color-video-channel-name-hover);
+}
+/* кнопка воспроизвести видео при наведении (видео) */
+button.ytp-play-button.ytp-button:hover .ytp-svg-fill {
+    fill: var(--color);
+}
+/* кнопка следующее видео при наведении (видео) */
+a.ytp-next-button.ytp-button:hover .ytp-svg-fill {
+    fill: var(--color);
+}
+/* кнопка звука при наведении (видео) */
+button.ytp-mute-button.ytp-button:hover .ytp-svg-fill {
+    fill: var(--color);
+}
+/* ответы автора цвет (видео) */
+ytd-author-comment-badge-renderer {
+    background-color:  var(--color);
+}
+/* упорядочить Сначала популярные */
+a.yt-simple-endpoint.style-scope.yt-dropdown-menu.iron-selected:hover div.item.style-scope.yt-dropdown-menu {
+    color: var(--color);
+}
+/* упорядочить Сначала новые */
+a.yt-simple-endpoint.style-scope.yt-dropdown-menu:hover div.item.style-scope.yt-dropdown-menu {
+    color: var(--color);
+}
+/* коментарии Читать дальше */
+span.more-button.style-scope.ytd-comment-renderer:hover {
+    color: var(--color);
+}
+/* коментарии Свернуть */
+span.less-button.style-scope.ytd-comment-renderer {
+    color: var(--color);
+}
+/* коментарии лайк автора видео */
+yt-icon.style-scope.ytd-creator-heart-renderer {
+    fill: var(--color-like-author);
+}
+/* канал при наведении на значёк канала круг */
+#channel-header-container yt-img-shadow.style-scope.ytd-c4-tabbed-header-renderer.no-transition {
+    border: var(--color-channel-icon-border-width) solid var(--color-channel-icon-border-hover);
+}
+/* канал при наведении на название канала цвет */
+#channel-title.style-scope.ytd-c4-tabbed-header-renderer:hover {
+    color: var(--color-channel-name-hover);
+}
+/* канал при наведении на количество подписчиков канала цвет */
+#subscriber-count.style-scope.ytd-c4-tabbed-header-renderer:hover {
+    color: var(--color-channel-subscribers-hover);
+}
+/* (верх) количество уведомлении цвет  */
+#notification-count.style-scope.ytd-notification-topbar-button-renderer {
+    background-color: var(--color-count-notyfi);
+}
+/* (верх) уведомления (внутри) при наведени цвет  */
+yt-formatted-string.style-scope.ytd-simple-menu-header-renderer:hover {
+    color: var(--color);
+}
+/* видео в эфире точка цвет */
+.ytp-live-badge[disabled]:before {
+    background: var(--color);
+}
+/* уменьшение видео в правый нижний угол при наведении цвет */
+.ytp-miniplayer-button.ytp-button:hover #ytp-id-21 {
+    fill: var(--color);
+}
+/* широкий экран видео при наведении цвет */
+.ytp-size-button.ytp-button:hover #ytp-id-23 {
+    fill: var(--color);
+}
+/* полный экран видео при наведении цвет */
+.ytp-fullscreen-button.ytp-button:hover .ytp-svg-fill {
+    fill: var(--color);
+}
+/* три полоски меню при наведении синии */
+#button.style-scope.yt-icon-button:hover #guide-icon.style-scope.ytd-masthead {
+    fill: var(--color);
+}
+paper-button {
+    border-radius: 7px!important;
+}
+#container.ytd-searchbox {
+    border-radius: 6px!important;
+}
+#chat {
+    border-radius: 6px!important;
+}
+#search-icon-legacy {
+    border-radius: 6px!important;
+    margin-left: 10px!important;
+}
+.sbdd_b, .sbsb_b, .sbsb_a {
+    border-radius: 6px!important;
+}
+.style-scope.ytd-live-chat-frame {
+    border-radius: 6px!important;
+}
+.style-scope.yt-multi-page-menu-section-renderer:hover > a > paper-item > div > yt-icon > svg > g > path,
+.style-scope.yt-multi-page-menu-section-renderer:hover > a > paper-item> yt-icon > svg > g > path,
+.style-scope.yt-multi-page-menu-section-renderer:hover > div > yt-icon > svg > g > path,
+.style-scope.yt-multi-page-menu-section-renderer:hover > yt-icon > svg > g > path {
+    color: var(--color);
+}
+/* addblock */
+#contents > ytd-rich-section-renderer.style-scope.ytd-rich-grid-renderer {
+    display: none;
+}
+/* addblock */
+[aria-label="Больше не нравится"][aria-pressed="true"] {
+    color: var(--color-like);
+}
+[aria-label='Снять отметку "Не нравится"'][aria-pressed="true"] {
+    color: var(--color-dizlike);
+}
