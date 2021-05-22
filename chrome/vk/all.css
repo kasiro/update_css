@@ -170,8 +170,7 @@
     border-radius: 7px!important;
 }
 /* У плейлистов */
-._audio_pl_item a,
-.audio_pl__actions_wrap {
+._audio_pl_item a {
     border-radius: 10px!important;
 }
 /* У музыки */
