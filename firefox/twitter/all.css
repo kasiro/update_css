@@ -258,10 +258,6 @@ a[href*="/photo"][role="link"] {
 box-shadow: 0 0 10px 1px var(--glow-color)!important;
 }
 
-a[aria-label="Профиль"] > div > div:nth-of-type(1) {
-box-shadow: 0 0 10px 1px var(--glow-color)!important;
-}
-
 /* покраска лайка */
 div[data-testid*="like"]:hover > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1) {
 	background: var(--like-color-min)!important;
@@ -445,7 +441,7 @@ div[role="button"][data-testid="SideNav_AccountSwitcher_Button"] > div:nth-of-ty
 }
 
 [data-testid="messageEntry"] > div > a {
-	box-shadow: 0 0 15px 1px var(--glow-color)!important;
+box-shadow: 0 0 15px 1px var(--glow-color)!important;
 }
 
 [aria-label="Список реакций пользователя"] [role="presentation"] {
