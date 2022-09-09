@@ -1,0 +1,143 @@
+[
+    {
+        "type": "span",
+        "icon": "fa-list-ul",
+        "text": "Каталог:",
+        "els": [
+            {
+                "type": "a",
+                "icon": "fa-book",
+                "name": "Манги",
+                "href": "/manga-list?types[]=1"
+            },
+            {
+                "type": "a",
+                "icon": "fa-book",
+                "name": "Манхвы",
+                "href": "/manga-list?types[]=5"
+            },
+            {
+                "type": "a",
+                "icon": "fa-book",
+                "name": "Маньхуа",
+                "href": "/manga-list?types[]=6"
+            },
+            {
+                "type": "a",
+                "icon": "fa-book",
+                "name": "OEL-манги",
+                "href": "/manga-list?types[]=4"
+            },
+            {
+                "type": "a",
+                "icon": "fa-book",
+                "name": "Руманга",
+                "href": "/manga-list?types[]=8"
+            },
+            {
+                "type": "a",
+                "icon": "fa-book",
+                "name": "Комикс западный",
+                "href": "/manga-list?types[]=9"
+            },
+            {
+                "type": "a",
+                "icon": "fa-scribd",
+                "name": "Синглов",
+                "href": "/manga-list?format[]=5"
+            },
+            {
+                "type": "sep"
+            },
+            {
+                "type": "a",
+                "icon": "fa-align-justify",
+                "name": "Весь",
+                "href": "/manga-list"
+            },
+            {
+                "type": "a",
+                "icon": "fa-random",
+                "name": "Случайный тайтл",
+                "href": "/random"
+            }
+        ]
+    },
+    {
+        "type": "sep"
+    },
+    {
+        "type": "span",
+        "icon": "fa-users",
+        "text": "Пользователи:",
+        "els": [
+            {
+                "type": "a",
+                "icon": "fa-user",
+                "name": "kasiro",
+                "href": "/user/482753"
+            },
+            {
+                "type": "a",
+                "icon": "fa-user",
+                "name": "алло  утиха? утихни",
+                "href": "/user/29078"
+            },
+            {
+                "type": "a",
+                "icon": "fa-user",
+                "name": "viktor",
+                "href": "/user/1"
+            }
+        ]
+    },
+    {
+        "type": "span",
+        "icon": "fa-briefcase",
+        "text": "(Мешочки с мангой :D):",
+        "els": [
+            {
+                "type": "a",
+                "icon": "fa-user",
+                "name": "Живущий в мангалибе(хаос)",
+                "href": "/user/778577"
+            },
+            {
+                "type": "a",
+                "icon": "fa-user",
+                "name": "Kazuto Kirigaya",
+                "href": "/user/22098"
+            },
+            {
+                "type": "a",
+                "icon": "fa-user",
+                "name": "Aidar",
+                "href": "/user/1608"
+            },
+            {
+                "type": "a",
+                "icon": "fa-user",
+                "name": "✨david✨",
+                "href": "/user/35846"
+            },
+            {
+                "type": "a",
+                "icon": "fa-user",
+                "name": "leha-kuznecov",
+                "href": "/user/2419"
+            },
+            {
+                "type": "a",
+                "icon": "fa-user",
+                "name": "syrgot",
+                "href": "/user/1437"
+            },
+            {
+                "type": "a",
+                "icon": "fa-user",
+                "name": "SGoblin",
+                "href": "/user/510"
+            }
+        ]
+    }
+]

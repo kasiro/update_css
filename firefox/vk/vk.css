@@ -1,0 +1,908 @@
+/* глобальные переменные */
+:root {
+	--color-online: #1bc897;
+    --color-not-count: #3bd78d;
+    --text-new-post: "Ваш Новый Пост";
+	/* colors:
+	blue: #4499e3
+
+	*/
+	/* цвета:
+	катин: rgba(160,94,206,0.69)
+
+	*/
+    /*--glow-effect-color: #67B5FF;*/
+    --glow-effect-color: #747FFF;
+    --select-color: #57c9ff;
+    /* авы-мои:
+
+	аниме:
+	   серая-глубоглазый:                 https://pp.userapi.com/c840737/v840737199/5a1b1/jCsnnqs9WjQ.jpg
+	   серая-одно-голубоглазая:           https://pp.userapi.com/c851324/v851324579/d16f/7OjEvGBvCUs.jpg
+	   лиловый-синий:                     https://csm9so.ru/files/avatars/1550561224.jpg
+	   серо-чёрный:                       https://media.moddb.com/images/members/5/4297/4296233/ao_avatar.jpg
+	   серый-глубоглазый-чёрноволосый:    https://images.chesscomfiles.com/uploads/v1/user/38707668.416645af.1200x1200o.633f0da267a2.jpeg
+	   лаймово-пиксельный:                https://app.clilk.com/db/userpics/5bbf56491f71a73f6b34dbb8.png
+	   я неко:                            https://cdn130.picsart.com/236350809016202.jpg
+	   я беловолосая девушка:             https://avatarfiles.alphacoders.com/691/69103.png
+	   я грустная:                        https://cs13.pikabu.ru/avatars/2797/x2797371-168616218.png
+	   я Дьявол:                          https://assets.faceit-cdn.net/avatars/c8c582f7-a99e-4b86-8c09-65ae3e3609b2_1577199242712.jpg
+	   я подводный грустный:              https://pbs.twimg.com/profile_images/907625249067487232/mM3Va7ZK_400x400.jpg
+	   я кровавый похуист:                https://i.pinimg.com/280x280_RS/06/15/16/061516af1a9a41062435e9fbc77596be.jpg
+	   я розовый паникёр:                 https://sun9-27.userapi.com/impg/c857132/v857132643/119033/RZZEMIPrxYs.jpg?size=200x0&quality=90&sign=4cb6be23bdbfa961e7d18a082639059b
+	   я переулок, милашка:               https://sun9-9.userapi.com/c857728/v857728788/19d9ae/eULL6jNg_ZA.jpg
+	   я заражённый зелёный:              https://sun1-90.userapi.com/c854128/v854128314/1109c2/Vk-lRObJD-Q.jpg
+	   я серая глубой чехол:              https://pp.userapi.com/c837430/v837430487/17539/UoNzZdlU03g.jpg
+	   я чужая(тёмная) в очках:           https://pbs.twimg.com/profile_images/809088554534141953/0fM5COIa.jpg
+	   я белая фиолетовая:                https://i.pinimg.com/236x/18/7d/69/187d690888e0379183aff035c00358ec.jpg
+	   я Алластор:                        https://sun9-6.userapi.com/c855624/v855624351/1772df/REZauQs93rc.jpg
+	   грустная тян окно:                 https://sun9-66.userapi.com/impg/c205824/v205824776/f2cdf/iJ6YJlWp7eI.jpg?size=200x0&quality=90&sign=4221cf0abd2dabe43279d87899cfc809
+	   парные:                            https://i.pinimg.com/236x/26/94/9a/26949a727d450c83ecd1d6bd5c8b5916.jpg
+	   типа я:                            https://i.pinimg.com/280x280_RS/1b/6a/e3/1b6ae3a3b22623c96c4bc52dcacfe23b.jpg
+	   Ал:                                https://sun9-59.userapi.com/c854524/v854524807/20996c/Q0FCpcQRj8E.jpg
+	   acc_av:                            https://pp.userapi.com/c846019/v846019126/f5cd2/hGOSjLjH6yI.jpg?ava=1
+	   чибик_чёрная:                      https://sun9-11.userapi.com/c858236/v858236197/1d2c73/KfYjEpF5zTY.jpg?ava=1
+	   чибик_филетовая:                   https://sun1-88.userapi.com/3oNnt58J-UwD2Be_WqNFsYEad5QCAhFpbJ7YKA/YkfjnpUGJL8.jpg
+	   романтик с розой:                  https://i.pinimg.com/236x/bf/29/b4/bf29b408fa436b867ad2ab96b6eda539.jp
+	обычные:
+
+	*/
+	/*--my-avatar: url(https://cdn.fastcup.net/avatars/users/261033_7fha6omi1.jpg);*/
+	--my-avatar: url(https://sun9-19.userapi.com/impg/NWxhoBXaN9gSvETZuvKIrLyt_c-eIQ-Q4XZfyQ/h5LtyEPC9ds.jpg?size=811x811&quality=96&sign=043bcd477c17d52f71db26f7f720ce6b&type=album);
+	--vstr-avatar: url(https://nyaa.shikimori.one/system/users/x160/242460.png?1528824794);
+
+	--what-avatar: url(https://sun7-7.userapi.com/c854228/v854228364/166ba3/gcyR2-Q0yrc.jpg);
+	/* авы-Кати:
+	сонная кошечка:            https://doomzone.ru/files/avatars/1553885950.jpg
+	блондинка:                 https://i.pinimg.com/280x280_RS/3e/53/ee/3e53ee1b4ae71a279284814d6e1d41ce.jpg
+	блондинка2:                https://avavatar.ru/images/avatars/3/avatar_gNjwU8fO6QKy4gRh.jpg
+	блонд цветы над головой:   https://i.pinimg.com/236x/04/af/92/04af92c4b070bb1fbe76edb0778fe094--sailor-jupiter-sailor-moon.jpg
+	   дарованный:
+	сато лучик:                https://i.pinimg.com/736x/f5/2e/29/f52e295f04c7a74ccf555efb9d9131d6.jpg
+	сато в телефоне:           https://yandex.ru/images/_crpd/a5aFVa558/31665eiKPbRX/yNxWqCyFML5LwZ2y4ozQ3QiqTSV0e49ZRaKeQj47a1txUl9mi7a9Z8NBC70RwbeAb5mTFICVU7SA_ntte33BV9k5d-jZUaG7K1RYQ
+	кошечка в наушниках:       https://i.pinimg.com/280x280_RS/91/c6/eb/91c6eb150cf392c422f716dd252917a4.jpg
+	у планшета:                https://sun9-40.userapi.com/c851128/v851128610/15ad36/BjBatzZYRCI.jpg?ava=1
+	илия сердечко:             https://imageproxy.ifcdn.com/crop:x-20,resize:320x,crop:x800,quality:90x75/images/3ce5ff509373c4480e45a1535d16a803a313545e4628f3f82a914c381da94a20_1.jpg
+	парные:                    https://i.pinimg.com/280x280_RS/f6/15/74/f6157469b7998a4d1bf3c2872b7860dd.jpg
+	грустная:                  https://pbs.twimg.com/profile_images/961289066963787777/1kBh2Egh_400x400.jpg
+	неко похожая:              https://sun9-29.userapi.com/c846523/v846523420/15d5bc/NwK3fHzF5bw.jpg?ava=1
+	чёрно-фиолетовый-кот:      https://coubsecure-s.akamaihd.net/get/b203/p/channel/cw_avatar/5dbb9c2b299/db9dd7386c0902f69758b/profile_pic_new_2x_1562734883_Pixiv.Id.356972.full.162926.jpg
+	кошечка:                   https://sun9-5.userapi.com/c638922/v638922987/4a4dc/Njbt_BjBmRE.jpg?ava=1
+	наущники_очки_красные_г:   http://i.mycdn.me/i?r=AzEOxUXG5QgodWC3x6hM10CkEuZVYWjusnqi3gQk9HCze-4ezO6eE8uSTX4ULMFTmcE
+	реал,угол,любоф:		   https://i.pinimg.com/236x/38/1a/e9/381ae904e6b942122fb65fe31c947122.jpg
+	няшка с подушкой:          https://i.pinimg.com/236x/eb/fe/82/ebfe82834607af7ae829ac36b28594eb.jpg?nii=t
+	просто похожая милая:      https://i.pinimg.com/280x280_RS/28/df/fa/28dffa13b7ef4e9bd3fd54e6c51fc14e.jpg
+	фиолетовая_Ава:            https://pp.userapi.com/c840331/v840331182/1021e/J_QBe0YihL8.jpg
+	Кото_ава:				   https://sun9-8.userapi.com/impg/Mh9YMe_MhSYgh9UrdMatSuG4LYN49SoXecdRtw/yce5zt-Wkpc.jpg?size=200x0&quality=88&crop=1,56,1036,1036&sign=b0b9826277d2414711ff012b28027cfd&c_uniq_tag=jsoEauRKBK49XzFJE7QEFmZ9sNwz6ArVW6T5h13YcEw&ava=1
+	*/
+	--katya-avatar: url(https://pp.userapi.com/c840331/v840331182/1021e/J_QBe0YihL8.jpg);
+
+	/* авы-мишины:
+	аниме в очках (капюшок):             https://i.pinimg.com/236x/68/75/4f/68754fb7063a6b84dd9f225b5381815a.jpg
+	аниме в очках (блондин):             https://avatars.mds.yandex.net/get-pdb/1964870/64f9fc3e-4009-4ea3-875b-345a7b69bd64/s1200
+	аниме кот (тёмно синяя):                           https://i.pinimg.com/736x/88/36/d8/8836d89873e94f20dfd4d6042eab259f.jpg
+	*/
+	--misha-avatar: url(https://sun9-38.userapi.com/impg/VBgLTDL_UF5X2OGxQZA7mSL1-duK3F6N3tuaGA/zJvGWzt_pRU.jpg?size=200x0&quality=90&crop=0,0,675,675&sign=e74af1338ba999983082f82b7c8bbe0b&c_uniq_tag=ukWUTGh6fPeCCKVma2tCAyn0b7Tjh-TNvWolPrp2d4w&ava=1);
+
+	--AnnaM-avatar: url(https://static.grouple.co/uploads/pics/08/52/083.jpg);
+
+	/* авы-даши:
+	красная:        	 https://cdn-nus-1.pinme.ru/photo/08/5e/085ec2e1ba27c37d61c90694cfc209e3.jpg
+	серая:          	 https://pp.userapi.com/c855232/v855232753/6ef0c/iY0b6ZgCWdw.jpg
+	фиолетовая:     	 https://im0-tub-ru.yandex.net/i?id=1aa7393766a4c50e850b56f901b3f9a8&n=13&exp=1
+	Овен:           	 https://avatars.mds.yandex.net/get-pdb/1909671/b6647b15-9dda-4a05-852c-0c082c3bd8df/s1200
+	красные волосы: 	 https://cdn1.flamp.ru/4a566fb330c6fe61f80d6c9e8eb3c51d_300_300.jpg
+	фиолетовые волосы:   https://i.pinimg.com/280x280_RS/ea/af/cf/eaafcfe31499f2a6aae55260972007d2.jpg
+	*/
+	--dasha-avatar: url(https://sun9-33.userapi.com/c848620/v848620485/a698d/6dTT_Kr8TbQ.jpg?ava=1);
+
+	/*--kl-avatar: url(http://pm1.narvii.com/7138/8a0f9af86756cbd560ad6976cf80be222d7076e5r1-610-610v2_uhq.jpg);*/
+	/*--kl-avatar: url(https://i08.fotocdn.net/s104/55e852e98b0d78f4/user_l/2234009278.jpg);*/
+	--kl-avatar: url(https://sun9-32.userapi.com/impg/R6yCFDVTDlqMO5-X2C6yNqcu2FUqrrqHloY3Pg/RkDSTLWJL7k.jpg?size=766x768&quality=96&sign=a34be2069843d4c9a856804c0c858fb8&type=album);
+
+	--nasta-avatar: url(https://kartinkinaden.ru/uploads/posts/2019-08/1566263887_art-devushka-s-kare-139.jpg);
+
+	--leonid-avatar: url(https://img-hw.xvideos.com/videos/profiles/profthumb/9a/8b/03/johan_felipe12/profile_1_big.jpg);
+
+	--arina: url(https://downhdlogo.yy.com/hdlogo/640640/640/640/94/1029949450/u10299494505pmsZ1k.jpg);
+
+	--zimin: url(https://store.playstation.com/store/api/chihiro/00_09_000/container/ES/es/999/EP4396-CUSA10659_00-ETH0000000003453/1575450113000/image?w=240&amp;h=240&amp;);
+
+	--nemov-avatar: url(https://i.pinimg.com/236x/38/ea/7a/38ea7a171f68516f57e5ae6bc09a66f3.jpg);
+
+	--rah-avatar: url(https://i.pinimg.com/236x/e1/42/bf/e142bf69c8558bdc7b2a3d84bb114b9c.jpg?nii=t);
+
+	--lena-avatar: url(https://sun9-37.userapi.com/c855732/v855732033/2269e5/NmOGPA6U_HY.jpg);
+
+	--Acimon-avatar: url(https://sun9-25.userapi.com/kujPBQbGEcvdowZMZJsvWInANdBW9qMcqpbNQQ/aw80sEXdKLA.jpg);
+	--AAcimon-avatar: url(https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/a0/a02d8fd12373fc8329714ed7985aada47e423e16_full.jpg);
+
+	--min-avatar: url(https://i.pinimg.com/236x/53/ba/fd/53bafdce6de2cd98a300e8577eb1795a.jpg);
+
+	--karb-avatar: url(https://cs9.pikabu.ru/avatars/2240/x2240805-1725009308.png);
+
+	--denya-avatar: url(https://sun9-48.userapi.com/impg/iBY-htu7yxmraIejby4IfL615fFxw2wifckJRA/Q6oS3eizFZs.jpg?size=662x662&quality=96&proxy=1&sign=daffccc773008a2bc949be51156ab8f7&type=album);
+
+	--Alice-avatar: url(https://i.pinimg.com/236x/47/7d/47/477d47e2e3de9fc6a3e15bd9a71fd30f.jpg);
+
+	--Anastas-avatar: url(http://pm1.narvii.com/7282/6014e05669e6bd27ebd785b3fcb3e3bb8b4d7599r1-600-692v2_uhq.jpg);
+
+	--admin: url(https://pp.userapi.com/c837228/v837228037/31240/91fL0EPcwhE.jpg);
+	--team: url(https://i.pinimg.com/280x280_RS/4a/ea/4b/4aea4b875960794cf2b694127d396c15.jpg);
+	--games: url(https://forum-ru.101xp.com/storage/data_portal_ru/avatars/l/259/259492.jpg?1477762011);
+}
+/* EcosystemAccountMenu_warningLink */
+[class*="EcosystemAccountMenu_warningLink"] {
+    display: none;
+}
+.ui_search_new .ui_search_button_search {
+    margin-left: 5px !important;
+}
+.im-page:not(.im-page_classic) .im-page--history {
+    border-radius: 15px !important;
+}
+[dir=ltr] .im-page .im-page--history {
+	margin-left: 330px!important;
+}
+.im-page--chat-body-abs {
+    width: 580px!important;
+}
+.message_history_wrap {
+    display: none;
+}
+.page_block:not(._audio_page_content_block):not(.im-page--history) {
+  -webkit-box-shadow: none !important;
+  box-shadow: 0px 0px 15px 2px var(--glow-effect-color) !important;
+}
+.im-page_classic.im-page .im-page--header,
+.im-page--chat-header._im_dialog_actions,
+.im-page--chat-input._im_chat_input_w {
+  background-color: transparent !important;
+}
+.photos_row {
+    border-radius: 10px;
+}
+.wide_column:hover #page_block_submit_post {
+    z-index: 1!important;
+}
+#page_block_submit_post:not(:hover) {
+    z-index: -1!important;
+}
+.ui_actions_menu_wrap._ui_menu_wrap {
+    z-index: 10!important;
+}
+
+
+::selection {
+	background-color: var(--select-color);
+}
+
+/* Поправки */
+/* Показать подробную информацию Закругление */
+.profile_more_info > a {
+    border-radius: 50px!important;
+}
+/* в сообщениях поле ввода */
+._im_text_wrap {
+    border-radius: 50px!important;
+}
+/* убирает надпись о Подписке в Аудио */
+.CatalogSection__stickyColumn > .CatalogBlock:last-child {
+    visibility: hidden;
+}
+.page_photos_module > a {
+    border-radius: 10px;
+}
+/* У изображений */
+.image_cover {
+    border-radius: 7px!important;
+}
+/* У плейлистов */
+._audio_pl_item a {
+    border-radius: 10px!important;
+}
+/* У музыки */
+.audio_row__cover,
+.audio_page_player__cover,
+.audio_row__cover_back {
+    border-radius: 7px!important;
+}
+/* Обложка певца */
+.audio_artist_block {
+    border-radius: 10px!important;
+}
+/* музыка поле поиска */
+.ui_search_input_inner {
+    border-radius: 10px!important;
+}
+/* музыка кнопка поиска */
+.ui_search_button_search {
+    border-radius: 10px!important;
+}
+/* музыка выподающий список поиска */
+.ui_search_sugg_list {
+    border-radius: 10px!important;
+}
+/* музыка кнопка перемешать */
+.audio_page__shuffle_all_button {
+    border-radius: 10px!important;
+}
+/* У музыки фон при наведении */
+.audio_row_content {
+    border-radius: 10px!important;
+}
+.friends_field_title .emoji {
+    border-radius: 50%!important;
+}
+.audio_pl__cover {
+	border-radius: 10px!important;
+}
+/*.im-mess_unread:first-of-type {*/
+/*    border-top-left-radius: 10px!important;*/
+/*    border-top-right-radius: 10px!important;*/
+/*}*/
+/*.im-mess_unread:last-of-type {*/
+/*    border-bottom-left-radius: 10px!important;*/
+/*    border-bottom-right-radius: 10px!important;*/
+/*}*/
+.notifier_baloon_title {
+    visibility: hidden;
+}
+.notifier_baloon_title:before {
+    content: 'Эй.. Псс.. это тебя..';
+    visibility: visible;
+}
+#feed_filters > div:not(.page_block),
+#feed_filters > div:nth-of-type(3) {
+    display: none;
+}
+.audio_pl_snippet__button_play {
+    border-radius: 10px;
+}
+.ui_thumb_x_button {
+	margin-top: 5px;
+	margin-right: 5px;
+    border-radius: 10px!important;
+}
+.audio_page_player2 .audio_page_player_status .btn_icon {
+    background-color: transparent;
+}
+.PeerProfile {
+    background: none!important;
+    box-shadow: none!important;
+}
+.msg.closed_page {
+    border-radius: 15px;
+}
+.audio_artist_snippet .audio_artist_snippet__cover {
+    border-radius: 10px;
+}
+._audio_pl_item {
+    border-radius: 10px;
+}
+.reply_fakebox,
+.reply_field {
+    border-radius: 50px!important;
+}
+.nim-dialog--inner-text {
+    border-radius: 10px!important;
+}
+.BannerItem__image {
+    border-radius: 10px;
+}
+.BannerItem {
+    border-radius: 13px;
+}
+.audio_layer_container .audio_friend:hover {
+    background-color: var(--n22f)!important;
+}
+._post.post {
+    border-radius: 20px!important;
+}
+.groups_menu_item_image img {
+    border-radius: 10px!important;
+}
+/* Поправки END*/
+
+/* свечение */
+/* страница блоки */
+.page_block {
+    box-shadow: 0px 0px 15px 2px var(--glow-effect-color)!important;
+}
+/* страница блоки END */
+/* в переписке */
+.nim-peer--photo-w {
+    transition: 0.8s;
+    box-shadow: 0px 0px 15px 2px var(--glow-effect-color);
+}
+.nim-dialog._im_dialog .nim-peer--photo-w {
+    transition: 0.8s;
+    box-shadow: 0px 0px 15px 2px var(--glow-effect-color);
+}
+.nim-dialog._im_dialog:hover .nim-peer--photo-w {
+    transition: 0.8s;
+    box-shadow: 0px 0px 100px 0px var(--glow-effect-color);
+}
+#im_dialogs > li .nim-peer--photo-w {
+    transition: 0.8s;
+    box-shadow: 0px 0px 15px 2px var(--glow-effect-color);
+}
+#im_dialogs > li:hover .nim-peer--photo-w {
+    transition: 0.8s;
+    box-shadow: 0px 0px 100px 0px var(--glow-effect-color);
+}
+/* На странице (Самая большая) */
+.page_avatar_wrap {
+    border-radius: 10px!important;
+   animation: fadein 1s;
+    box-shadow: 0px 0px 20px 2px var(--glow-effect-color);
+}
+/* На странице (Самая большая) Закругление краёв при наведении */
+.owner_photo_bubble_wrap,
+.profile_photo_link:hover {
+    border-radius: 10px!important;
+}
+/* на странице Мои фотографии */
+.crisp_image {
+    animation: fadein 1s;
+    box-shadow: 0px 0px 10px 1px var(--glow-effect-color);
+}
+/* на странице новый пост */
+.post_field_user_image {
+    animation: fadein 1s;
+    box-shadow: 0px 0px 10px 1px var(--glow-effect-color);
+}
+/* на странице Ава В постах, и у групп  */
+.post_img,
+.copy_post_img {
+    animation: fadein 1s;
+    box-shadow: 0px 0px 10px 1px var(--glow-effect-color);
+}
+/* на странице Друзья */
+.people_cell_img {
+    animation: fadein 1s;
+    box-shadow: 0px 0px 8px 1px var(--glow-effect-color);
+}
+/* В Музыке у друзей Ава */
+.audio_friends_list > div > a:nth-of-type(1) {
+    animation: fadein 1s;
+    box-shadow: 0px 0px 10px 2px var(--glow-effect-color);
+}
+/* В Музыке у плейлистов */
+.audio_pl__cover {
+    transition: 0.4s;
+    box-shadow: 0 0 15px 2px var(--glow-effect-color);
+}
+.audio_pl__cover:hover {
+    transition: 0.4s;
+    box-shadow: none;
+}
+/* В Музыке у музыки */
+.audio_row__cover_back {
+    animation: fadein 1s;
+    box-shadow: 0px 0px 7px 2px var(--glow-effect-color);
+}
+/* В Друзьях ава */
+.friends_photo_wrap {
+    animation: fadein 1s;
+    border-radius: 50%!important;
+    box-shadow: 0px 0px 10px 1px var(--glow-effect-color);
+}
+/* на странице Ава групп */
+.thumb {
+    animation: fadein 1s;
+    box-shadow: 0px 0px 10px 1px var(--glow-effect-color);
+}
+/* Мини чат  */
+.chat_tab_img,
+.fc_msgs_img {
+    animation: fadein 1s;
+    box-shadow: 0px 0px 6px 1px var(--glow-effect-color);
+}
+/* Мини чат (поиск)  */
+.fc_contacts .fc_contact_photo img {
+    animation: fadein 1s;
+    box-shadow: 0px 0px 6px 1px var(--glow-effect-color);
+}
+/* коментарии основные */
+.replies_list .reply_image img {
+    animation: fadein 1s;
+    box-shadow: 0px 0px 6px 1px var(--glow-effect-color);
+}
+/* В Друзьях ава меню справа */
+.right_list_photo {
+    animation: fadein 1s;
+    border-radius: 50%!important;
+    box-shadow: 0px 0px 10px 1px var(--glow-effect-color);
+}
+/* кнопки при наведении */
+.flat_button:hover {
+    transition: 0.4s;
+    box-shadow: 0px 0px 10px 1px var(--glow-effect-color);
+}
+/* круглешок онлайна двигаем */
+.online:after {
+    margin-right: 4px;
+    margin-bottom: 6px;
+}
+.top_profile_img {
+    animation: fadein 0.7s;
+    box-shadow: 0px 0px 10px 1px var(--glow-effect-color);
+}
+.notifier_image_wrap {
+    animation: fadein 0.7s;
+    border-radius: 50%!important;
+    box-shadow: 0px 0px 10px 1px var(--glow-effect-color);
+}
+.tt_w,
+.tt_default,
+.tt_up {
+    animation: fadein 0.4s;
+    box-shadow: 0px 0px 15px 1px var(--glow-effect-color);
+}
+.audio_row__more_actions {
+    border-radius: 10px!important;
+    animation: fadein 0.4s;
+    box-shadow: 0px 0px 15px 1px var(--glow-effect-color);
+}
+.ms_items_more._more_items {
+	border-radius: 10px!important;
+    animation: fadein 0.4s;
+    box-shadow: 0px 0px 15px 1px var(--glow-effect-color);
+}
+.ui_actions_menu._ui_menu {
+	border-radius: 10px!important;
+    animation: fadein 0.4s;
+    box-shadow: 0px 0px 15px 1px var(--glow-effect-color);
+}
+.ui_actions_menu._ui_menu a,
+.ms_items_more._more_items a {
+    border-radius: 5px!important;
+}
+.group_row_img {
+    animation: fadein 0.4s;
+    box-shadow: 0px 0px 15px 1px var(--glow-effect-color);
+}
+.ow_ava {
+    animation: fadein 0.4s;
+    box-shadow: 0px 0px 10px 1px var(--glow-effect-color);
+}
+.side_bar_inner > nav > ol > li {
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.side_bar_inner > nav > ol > li:hover {
+    border-radius: 10px;
+    transition: 0.4s;
+    box-shadow: 0px 0px 10px 1px var(--glow-effect-color);
+}
+.side_bar_inner > nav > ol > li:hover > a {
+    background: transparent!important;
+}
+.pg_lnk:hover,
+.tabbed_box .summary_tab_sel,
+.ui_tab_sel,
+.ui_tab_sel:hover,
+.ui_tabs .ui_tab_sel,
+.ui_tabs .ui_tab_sel:hover,
+.ui_tabs_box .ui_tab_sel,
+.ui_tabs_box .ui_tab_sel:hover,
+.Tabs__item--active,
+.Tabs__item--active:hover {
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px 1px var(--glow-effect-color);
+    border-bottom: var(--g2)!important;
+    border-bottom-color: none;
+    animation: fadein 0.3s;
+}
+.ui_tab, .ui_tabs .ui_tab {
+    color: var(--button-text-color);
+    /*color: #fff;*/
+    float: left;
+    transition: none;
+    cursor: pointer;
+}
+.ui_tab:hover, .ui_tabs .ui_tab:hover {
+    text-decoration: none;
+    border-bottom: none;
+}
+.round_button:hover {
+    transition: 0.4s;
+    box-shadow: 0px 0px 15px 2px var(--glow-effect-color);
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* SCSS Generated css */
+.ui_rmenu {
+  transition: all 0.4s ease 0s !important;
+  padding: 10px 5px 10px 5px;
+}
+
+.ui_rmenu a {
+  transition: all 0.4s ease 0s !important;
+  border-radius: 10px;
+  margin-top: 6px;
+}
+
+.ui_rmenu_item_sel {
+  transition: all 0.4s ease 0s !important;
+  box-shadow: inset 0 -6px 5px -3px var(--glow-effect-color) !important;
+  background: none !important;
+}
+
+.ui_rmenu_item_sel:hover {
+  transition: all 0.4s ease 0s !important;
+  box-shadow: inset 0 -6px 5px -3px var(--glow-effect-color) !important;
+}
+
+.ui_rmenu_item.ui_rmenu_item_sel:hover {
+  transition: all 0.4s ease 0s !important;
+  box-shadow: inset 0 0px 5px 3px var(--glow-effect-color) !important;
+}
+
+.ui_rmenu_item:hover {
+  background: none !important;
+}
+.ui_rmenu_item:hover:not(.ui_rmenu_item_sel) {
+  transition: all 0.4s ease 0s !important;
+  box-shadow: inset 0 -6px 5px -3px var(--glow-effect-color) !important;
+  background: none !important;
+}
+/* SCSS Generated css END */
+.ui_rmenu_slider,
+._ui_rmenu_slider,
+.ui_rmenu_slider._ui_rmenu_slider{
+    background-color: transparent!important;
+    box-shadow: none!important;
+}
+.ui_rmenu_item_sel, .ui_rmenu_item_sel:hover {
+    border-left: none!important;
+}
+/* Правое меню сообщения END */
+._im_ui_peers_list a {
+    transition: 0.4s;
+    background: none;
+}
+._im_ui_peers_list a:hover {
+    transition: 0.4s;
+    box-shadow: 0px 0px 10px 2px var(--glow-effect-color);
+    background: none;
+}
+/*._im_dialog_link,*/
+/*._im_page_peer_name {*/
+/*    text-shadow: 0px 0px 3px #fff;*/
+/*}*/
+/*span._dialog_body {*/
+/*    text-shadow: 0px 0px 3px #fff;*/
+/*}*/
+/*.im-mess--text {*/
+/*    text-shadow: 0px 0px 3px #fff;*/
+/*}*/
+.im-mess-stack--lnk,
+.im-replied--author-link:before,
+.friends_field_title a,
+.friends_field_act {
+    text-shadow: 0px 0px 3px var(--g2);
+}
+.audio_page_layout .audio_blocks .recoms_special_thumb,
+.audio_page_layout .audio_section .recoms_special_thumb {
+    box-shadow: 0 0px 20px 3px #fff;
+}
+.notifier_baloon {
+    border-radius: 10px;
+    box-shadow: 0 0px 15px 2px var(--glow-effect-color);
+}
+#top_profile_menu {
+    box-shadow: 0px 0px 10px 1px var(--glow-effect-color);
+}
+#top_profile_menu a:hover {
+    border-radius: 5px;
+}
+/* в сообщениях поле ввода */
+._im_text_wrap {
+    box-shadow: 0 0 15px 2px var(--glow-effect-color);
+}
+/* в сообщениях поле ввода END */
+/* все сообщения там где сама переписка */
+.im-page.js-im-page.im-page_classic:before {
+    box-shadow: 0px 0px 20px 1px var(--glow-effect-color)!important;
+}
+/* все сообщения там где сама переписка END */
+/* мои фотографии у альбомов Закругление */
+#pva_content > div .photos_album_thumb {
+    border-radius: 10px!important;
+}
+/* мои фотографии у фотографий Закругление */
+.photos_row_wrap > div {
+    border-radius: 10px!important;
+}
+.audio_row__more_action:first-of-type {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.audio_row__more_action:last-of-type {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.audio_row__more_action:first-of-type:hover {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.audio_row__more_action:last-of-type:hover {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.eltt._audio_row__tt {
+    visibility: hidden;
+}
+.wdd_img_full,
+.wdd_imgs a {
+    box-shadow: 0px 0px 15px 1px var(--glow-effect-color)!important;
+}
+.recoms_special_thumb {
+    box-shadow: 0 0 10px 1px #fff!important;
+}
+.im-popular--avatar-w._online img {
+	box-shadow: 0px 0px 15px 1px var(--glow-effect-color)!important;
+}
+/* Кнопка Подписан */
+#page_actions_btn {
+    transition: 0.3s;
+    box-shadow: inset 0px 0px 40px 1px var(--glow-effect-color);
+}
+#page_actions_btn:hover {
+    transition: all 0.4s ease 0s!important;
+    box-shadow: inset 0px 0px 0px 0px var(--glow-effect-color)!important;
+}
+/* Кнопка Подписан END */
+.feedback_image img {
+	transition: 0.4s;
+	box-shadow: 0px 0px 15px 1px var(--glow-effect-color)!important;
+}
+/* Истории */
+.stories_feed_items > a {
+    transition: 0.5s;
+    box-shadow: none;
+}
+.stories_feed_items > a:hover {
+    transition: 0.5s;
+    box-shadow: 0 0 13px 2px var(--glow-effect-color);
+}
+.stories_feed_items > a:hover .stories_feed_preview_authors_wrapper {
+    transition: 0.5s;
+    box-shadow: none;
+}
+.stories_feed_preview_authors_wrapper {
+	transition: 0.5s;
+	box-shadow: 0 0 20px 5px var(--glow-effect-color);
+}
+.stories_feed_items > a:hover .stories_feed_preview_add {
+    transition: 0.5s;
+    box-shadow: none;
+}
+.stories_feed_preview_add {
+	transition: 0.5s;
+	box-shadow: 0 0 15px 2px var(--glow-effect-color);
+}
+.stories_feed_items > a {
+    border-radius: 14px!important;
+    margin-right: 4px!important;
+}
+/* Истории END */
+/* свечение END */
+
+/* АВАТАРКА Администрация ВК */
+li[data-list-id="100"] img {
+	content: var(--admin);
+}
+/* все сообщения ава */
+.nim-dialog._im_dialog._im_dialog_100.nim-dialog_classic ._im_peer_target._online_reader[href="/id100"] img{
+    content: var(--admin);
+}
+/* ава в переписке сверху справа */
+.im-page--aside-photo ._im_header_link[href="/id100"] img {
+    content: var(--admin);
+}
+a[href="/id100"] img,
+a[href="/id100"] .ow_ava {
+    content: var(--admin);
+}
+#wddi100_like_mail_dd img {
+	content: var(--admin);
+}
+.ListItem[data-id="100"] img {
+    content: var(--admin);
+}
+/* АВАТАРКА Администрация ВК END*/
+
+/* АВАТАРКА Команда */
+/* ава на странице */
+[href="/photo-22822305_353463002"] img {
+    content: var(--team);
+}
+/* ава на странице ниже */
+a[href="/photo-22822305_353463002?all=1"] {
+    content: var(--team);
+}
+/* ава на странице на постах */
+.post_image[href="/team"] img {
+    content: var(--team);
+}
+/* на лайке */
+.like_tt_owner[href="/team"] img {
+    content: var(--team);
+}
+/* ава в друзьях */
+.friends_photo[href="/team"] img {
+   content: var(--team);
+}
+/* все сообщения ава */
+.nim-dialog._im_dialog._im_dialog_-22822305.nim-dialog_classic ._im_peer_target._online_reader[href="/team"] img{
+    content: var(--team);
+}
+/* ава в переписке сверху справа */
+.im-page--aside-photo ._im_header_link[href="/team"] img {
+    content: var(--team);
+}
+/* внизу справа в мини переписке ава */
+.chat_onl_inner .chat_tab_wrap[href="/team"] img {
+    content: var(--team);
+}
+/* внизу справа в мини переписке внутри ава */
+#fc_contacts a.fc_contact.clear_fix[href="/team"] img {
+    content: var(--team);
+}
+/* внизу справа в мини переписке ава в самой мини переписке */
+.fc_msgs_img[href="/team"] {
+    content: var(--team);
+}
+/* все сообщения ава справа ниже (Команда отправил(а)) */
+.chat_tab_wrap[href="/id-22822305"] img {
+    content: var(--team);
+}
+/* в музыке ава */
+._audio_friend a[href="/team"] {
+    content: var(--team);
+}
+/* в музыке ава (когда открыл)*/
+.ui_tabs.clear_fix.ui_tabs_header a[href="/team"] {
+    content: var(--team);
+}
+/* поиск друзей ава */
+.people_row.search_row.clear_fix a[href="/team"] img {
+    content: var(--team);
+}
+/* поиск (верх) ава */
+#ts_cont_wrap a[href="/team"] img {
+    content: var(--team);
+}
+/* на моей странице в друзьях ава */
+.people_cell_ava[href="/team"] img {
+    content: var(--team);
+}
+/* в друзьях на страничке общие друзья ава */
+.fans_rows a.fans_fan_ph[href="/team"] img {
+    content: var(--team);
+}
+/* в группе (Подписан 1 друг) ава */
+a.group_friends_image[href="/team"] {
+    content: var(--team);
+}
+a[href="/team"] img {
+    content: var(--team);
+}
+a[href="/team"] img,
+a[href="/team"] .ow_ava {
+    content: var(--team);
+}
+.im_grid[href="/team"] img {
+    content: var(--team);
+}
+#wddi-22822305_like_mail_dd img {
+    content: var(--team);
+}
+.feedback_image[href="/team"] {
+    content: var(--team);
+}
+.ListItem[data-id="-22822305"] img {
+    content: var(--team);
+}
+/* АВАТАРКА Команда END*/
+
+/* АВАТАРКА Игры Вконтакте */
+/* ава на странице */
+[href="/photo-78616012_456239908"] img {
+    content: var(--games);
+}
+/* ава на странице ниже */
+a[href="/photo-78616012_456239908?all=1"] {
+    content: var(--games);
+}
+/* ава на странице на постах */
+.post_image[href="/vkgames"] img {
+    content: var(--games);
+}
+/* на лайке */
+.like_tt_owner[href="/vkgames"] img {
+    content: var(--games);
+}
+/* ава в друзьях */
+.friends_photo[href="/vkgames"] img {
+   content: var(--games);
+}
+/* все сообщения ава */
+.nim-dialog._im_dialog._im_dialog_-78616012.nim-dialog_classic ._im_peer_target._online_reader[href="/vkgames"] img{
+    content: var(--games);
+}
+/* ава в переписке сверху справа */
+.im-page--aside-photo ._im_header_link[href="/vkgames"] img {
+    content: var(--games);
+}
+/* внизу справа в мини переписке ава */
+.chat_onl_inner .chat_tab_wrap[href="/vkgames"] img {
+    content: var(--games);
+}
+/* внизу справа в мини переписке внутри ава */
+#fc_contacts a.fc_contact.clear_fix[href="/vkgames"] img {
+    content: var(--games);
+}
+/* внизу справа в мини переписке ава в самой мини переписке */
+.fc_msgs_img[href="/vkgames"] {
+    content: var(--team);
+}
+/* все сообщения ава справа ниже (Игры отправил(а)) */
+.chat_tab_wrap[href="/id-78616012"] img {
+    content: var(--games);
+}
+/* в музыке ава */
+._audio_friend a[href="/vkgames"] {
+    content: var(--games);
+}
+/* в музыке ава (когда открыл)*/
+.ui_tabs.clear_fix.ui_tabs_header a[href="/vkgames"] {
+    content: var(--games);
+}
+/* поиск друзей ава */
+.people_row.search_row.clear_fix a[href="/vkgames"] img {
+    content: var(--games);
+}
+/* поиск (верх) ава */
+#ts_cont_wrap a[href="/vkgames"] img {
+    content: var(--games);
+}
+/* на моей странице в друзьях ава */
+.people_cell_ava[href="/vkgames"] img {
+    content: var(--games);
+}
+/* в друзьях на страничке общие друзья ава */
+.fans_rows a.fans_fan_ph[href="/vkgames"] img {
+    content: var(--games);
+}
+/* в группе (Подписан 1 друг) ава */
+a.group_friends_image[href="/vkgames"] {
+    content: var(--games);
+}
+a[href="/vkgames"] img {
+    content: var(--games);
+}
+a[href="/vkgames"] img,
+a[href="/vkgames/new"] div,
+a[href="/vkgames/bigname"] div,
+a[href="/vkgames"] .ow_ava {
+    content: var(--games);
+}
+.im_grid[href="/vkgames"] img {
+    content: var(--games);
+}
+#wddi-78616012_like_mail_dd img {
+    content: var(--games);
+}
+.feedback_image[href="/vkgames"] {
+    content: var(--games);
+}
+.ListItem[data-id="-78616012"] img {
+    content: var(--games);
+}
+/* АВАТАРКА Игры Вконтакте END*/

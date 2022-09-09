@@ -1,0 +1,57 @@
+@import '../root';
+$data: (
+	'1034062480': '--rah-avatar',
+	'749638330': '--kat-avatar',
+	'480209747': '--misha-avatar',
+	'980011683': '--anya-avatar'
+);
+
+$avatar_size: 40px;
+
+.bubble.is-out.is-group-last .bubble-content-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.bubble.is-out.is-group-last .bubble-content {
+	margin-right: 10px;
+}
+
+.bubble.is-out.is-group-last .bubble-content-wrapper::after {
+  display: flex;
+  content: '';
+  cursor: pointer;
+  background-image: var(--my-avatar);
+  width: $avatar_size;
+  height: $avatar_size;
+  background-size: $avatar_size;
+  border-radius: 50px;
+  float: right;
+  margin-right: -50px;
+}
+
+@each $id, $var in $data {
+	avatar-element[data-peer-id="#{$id}"] img {
+		content: var(#{$var});
+	}
+	avatar-element[peer="#{$id}"] img {
+		content: var(#{$var});
+	}
+	.bubble.is-in.is-group-last[data-peer-id="#{$id}"] .bubble-content-wrapper {
+		display: flex;
+		align-items: flex-end;
+		margin-left: -50px;
+	}
+	.bubble.is-in.is-group-last[data-peer-id="#{$id}"] .bubble-content-wrapper::before {
+		display: flex;
+		content: '';
+		cursor: pointer;
+		background-image: var(#{$var});
+		width: $avatar_size;
+		height: $avatar_size;
+		background-size: $avatar_size;
+		border-radius: 50px;
+		float: left;
+		margin-right: 10px;
+	}
+}
