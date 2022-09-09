@@ -1,118 +1,131 @@
 :root, html[data-mode="dark"] {
-    --primary: #6F65A7;
-    --primary-lighten: #6F65A7;
-    --primary-darken: #6F65A7;
-    --red: #9c0000;
-    --red-lighten: #ff0000;
-    --aqua: #00b27b;
-    --aqua-lighten: #00e79f;
-    --button-primary-bg: #6F65A7;
-    --button-primary-bg-hover: #594F92;
-    --button-primary-bg-active: #5A4E9F;
-    --text-link: #6F65A7;
-    /* prev: #0eaae6  */
+	--primary: #6F65A7;
+	--primary-lighten: #6F65A7;
+	--primary-darken: #6F65A7;
+	--red: #9c0000;
+	--red-lighten: #ff0000;
+	--aqua: #00b27b;
+	--aqua-lighten: #00e79f;
+	--button-primary-bg: #6F65A7;
+	--button-primary-bg-hover: #594F92;
+	--button-primary-bg-active: #5A4E9F;
+	--text-link: #6F65A7;
+	/* prev: #0eaae6  */
+}
+.updates__left {
+	border-radius: 8px!important;
+}
+.media-slider-arrows__arrow {
+	border-radius: 10px!important;
+}
+.media-tag-item {
+	border-radius: 10px;
+	border: none!important;
+}
+.manga-list-item_inline {
+	border-radius: 10px!important;
 }
 ::selection {
-    background-color: var(--aqua);
+	background-color: var(--aqua);
 }
 .search__input-wrap input {
-    border-radius: 10px;
+	border-radius: 10px;
 }
 .search__types .search__type {
-    border-radius: 7px;
+	border-radius: 7px;
 }
 .top-user__bar, .top-user__bar-fill {
-    height: 7px;
+	height: 7px;
 }
 .control__indicator.control__indicator_checkbox {
-    border-radius: 50px;
+	border-radius: 50px;
 }
 .bookmark-input__filter {
-    border-radius: 50px;
+	border-radius: 50px;
 }
 .menu__item {
-    margin: 0px 5px 0px 5px;
-    border-radius: 10px!important;
+	margin: 0px 5px 0px 5px;
+	border-radius: 10px!important;
 }
 .menu__item:before {
-    margin: 0px 5px 0px 5px;
-    border-radius: 10px!important;
+	margin: 0px 5px 0px 5px;
+	border-radius: 10px!important;
 }
 .comments-search__input {
-    border-radius: 50px!important;
+	border-radius: 50px!important;
 }
 .modal__close {
-    border-radius: 10px;
+	border-radius: 10px;
 }
 .comment_sticky .comment__body .comment__head:after {
-    border-radius: 10px;
+	border-radius: 10px;
 }
 .rules-btn {
-    border-radius: 10px;
+	border-radius: 10px;
 }
 .top-user__bar-fill {
-    background: #00b27b;
+	background: #00b27b;
 }
 .comment__avatar {
-    width: 40px;
-    height: 40px;
+	width: 40px;
+	height: 40px;
 }
 .tippy-box {
-    border-radius: 10px!important;
+	border-radius: 10px!important;
 }
 .bookmark-folder-create__input {
-    border-radius: 10px;
+	border-radius: 10px;
 }
 .hot-media-wrap {
-    padding: 10px;
+	padding: 10px;
 }
 .button {
-    border-radius: 50px;
+	border-radius: 50px;
 }
 .discussion-category.label {
-    padding: 10px;
-    height: 30px!important;
-    border-radius: 50px;
-    margin-right: 5px;
+	padding: 10px;
+	height: 30px!important;
+	border-radius: 50px;
+	margin-right: 5px;
 }
 .f-sidenav .f-sidenav__buttons a {
-    border-radius: 50px;
+	border-radius: 50px;
 }
 .discussion-relation {
-    border-radius: 10px;
+	border-radius: 10px;
 }
 .avatar {
-    border-radius: 50px;
+	border-radius: 50px;
 }
 [class*="discussions"] > .discussions-header *:not(.dropdown-menu) {
-    border-radius: 50px!important;
+	border-radius: 50px!important;
 }
 [class*="discussions"] > .discussions-header .dropdown-menu {
-    margin-top: 5px;
+	margin-top: 5px;
 }
 [class*="discussions"] > .discussions-header .dropdown {
-    margin-left: 5px;
+	margin-left: 5px;
 }
 [class*="discussions"] > * > * {
-    border-radius: 10px;
+	border-radius: 10px;
 }
 .f-pagination .button {
-    border-radius: 50px!important;
+	border-radius: 50px!important;
 }
 .f-categories__items :where(.f-category, .f-category:before) {
-    border-radius: 50px;
+	border-radius: 50px;
 }
 .discussion-category:not(.label) {
-    width: 60%;
-    padding-top: 3%;
-    height: 35px!important;
-    text-align: center;
-    border-radius: 50px;
-    margin-right: 5px;
+	width: 60%;
+	padding-top: 3%;
+	height: 35px!important;
+	text-align: center;
+	border-radius: 50px;
+	margin-right: 5px;
 }
 .top-user__bar,
 .top-user__bar > * {
-    border-radius: 50px!important;
+	border-radius: 50px!important;
 }
 .header-right-menu__avatar,
 .top-user__avatar,
@@ -121,213 +134,214 @@
 .users-bookmarks > img,
 .profile-user__avatar-wrap > img,
 .m-menu__profile > a > img {
-    border-radius: 50%;
+	border-radius: 50%;
 }
 .tag-item {
-    border-radius: 50px;
+	border-radius: 50px;
 }
 .bookmark__manga-name:hover,
 .bookmark__last-chapter:hover {
-    color: var(--primary);
+	color: var(--primary);
 }
 .label_info, .m-label_info {
-    background: var(--primary);
+	background: var(--primary);
 }
 .tag-item:hover {
-    color: var(--button-primary-bg-hover);
+	color: var(--button-primary-bg-hover);
 }
 .header-button__icon:hover {
-    background-color: transparent;
+	background-color: transparent;
 }
 .header-menu__item > a:hover, .header-menu__item > span:hover {
-    background-color: transparent;
+	background-color: transparent;
 }
 .button[data-status="3"], .button_red {
-    background-color: var(--aqua-lighten);
+	background-color: var(--aqua-lighten);
 }
 .button[data-status="3"]:hover, .button_red:hover {
-    background-color: var(--aqua);
+	background-color: var(--aqua);
 }
 .button_white:focus, .button_white:hover {
-    background-color: var(--button-primary-bg-active);
+	background-color: var(--button-primary-bg-active);
 }
 .button_link:active, .button_link:focus, .button_link:hover {
-    color: var(--button-primary-bg-hover);
+	color: var(--button-primary-bg-hover);
 }
 .updates__cover,
 .manga-list-item__cover {
-    border-radius: 5%;
+	border-radius: 5%;
 }
 .updates__type {
-    border-radius: 5px;
-    /*margin-left: 3%;*/
-    /*margin-top: 3%;*/
+	border-radius: 5px;
+	/*margin-left: 3%;*/
+	/*margin-top: 3%;*/
 }
 .media-card,
 .manga__cover,
 .manga__image {
-    border-radius: 10px;
+	border-radius: 10px;
 }
 .profile__nav > a {
-    border-radius: 7px;
+	border-radius: 7px;
 }
 .aside__panel,
 .profile__content,
 .messages__wrapper,
 .section {
-    border-radius: 7px;
+	border-radius: 7px;
 }
 #users-bookmarks-show:hover,
 .users-bookmarks-more:hover {
-    color: var(--primary);
+	color: var(--primary);
 }
 .bookmark-grid-item__chapter-marker {
-    background-color: var(--primary);
+	background-color: var(--primary);
 }
 .manga-bg__title:hover {
-    color: var(--primary);
-    cursor: default;
+	color: var(--primary);
+	cursor: default;
 }
 .menu.menu_xs > .menu__item:hover {
-    color: var(--primary);
+	color: var(--primary);
 }
 .comment__date-time {
-    color: var(--aqua);
+	color: var(--aqua);
 }
 .m-label_alert {
-    background: var(--aqua);
+	background: var(--aqua);
 }
 .text-danger {
-    color: var(--aqua)!important;
-    color: var(--aqua)!important;
+	color: var(--aqua)!important;
+	color: var(--aqua)!important;
 }
 .menu__item[data-status="default"],
 .menu__item[data-status="default"]:hover {
-    color: var(--aqua);
+	color: var(--aqua);
 }
 .rating__star:hover, .rating__star:hover ~ .rating__star {
-    color: var(--aqua);
+	color: var(--aqua);
 }
 .profile__info-value a {
-    color: var(--aqua);
+	color: var(--aqua);
 }
 .profile__info-value a:hover {
-    color: var(--primary);
+	color: var(--primary);
 }
 .topic-item__icon::after {
-    border-radius: 50%;
+	border-radius: 50%;
 }
 .topic-item-stat__count {
-    color: var(--primary);
+	color: var(--primary);
 }
 .media-card-wrap {
-    transition: 0.3s;
+	transition: 0.3s;
 }
 .media-card-wrap:hover {
-    transition: 0.3s;
-    transform: scale(1.1);
+	transition: 0.3s;
+	transform: scale(1.1);
+	cursor: pointer!important;
 }
 .hot-media-wrap {
-    padding-top: 5px;
-    padding-bottom: 10px;
+	padding-top: 5px;
+	padding-bottom: 10px;
 }
 .menu.header-dropdown {
-    width: 240px;
+	width: 240px;
 }
-.menu.header-dropdown > a {
-    transition: 0.4s;
+.menu.header-dropdown > .menu__item {
+	transition: 0.4s;
 }
-.menu.header-dropdown > a:hover {
-    margin-left: 10px;
-    transition: 0.4s;
+.menu.header-dropdown > .menu__item:hover {
+	margin-left: 10px;
+	transition: 0.4s;
 }
 .user__avatar-wrap {
-    transition: 0.4s;
+	transition: 0.4s;
 }
 .user__avatar-wrap:hover {
-    transition: 0.4s;
-    transform: scale(1.2);
+	transition: 0.4s;
+	transform: scale(1.2);
 }
 .header-right-menu > .header-button > div:hover {
-    color: var(--primary);
+	color: var(--primary);
 }
 .button_sm {
-    height: 30px;
-    border-radius: 50px;
-    overflow: hidden;
+	height: 30px;
+	border-radius: 50px;
+	overflow: hidden;
 }
 .button_sm i {
-    overflow: hidden;
-    position: relative;
-    left: -100%;
-    transition: all 200ms ease;
-    color: #fff;
+	overflow: hidden;
+	position: relative;
+	left: -100%;
+	transition: all 200ms ease;
+	color: #fff;
 }
 .button_sm:hover i {
-    overflow: hidden;
-    left: 0px;
+	overflow: hidden;
+	left: 0px;
 }
 .button_sm[title="Изменить настройки"] {
-    line-height: 30px;
+	line-height: 30px;
 }
 .user__actions {
-    margin-top: 3px;
+	margin-top: 3px;
 }
 .user__actions > * {
-    transition: 0.3s;
+	transition: 0.3s;
 }
 .user__username:hover {
-    color: var(--primary);
-    cursor: default;
+	color: var(--primary);
+	cursor: default;
 }
 .profile__nav-link:not(.profile__nav-link_active):hover {
-    border-color: #ffffff;
+	border-color: #ffffff;
 }
 .tippy-tooltip.dropdown-theme {
-    margin-top: 15px;
-    border-radius: 10px;
+	margin-top: 15px;
+	border-radius: 10px;
 }
 img[src="https://mangalib.me/uploads/users/29078/4kmQNaOLwA.jpg"],
 img[src*="/uploads/users/29078/"] {
-    /*
-    https://i.pinimg.com/236x/c3/23/f4/c323f4b37254ff1a2a18ef2e0c6f2f40--anime-sketch-image-manga.jpg
-    https://surgebook.com/uploads/user_174548/avatar/1j2234dmlh_thumb_340
-    https://i.pinimg.com/236x/fd/78/e8/fd78e80dfab8bc747b853c8b1533a93e.jpg
-    https://i.pinimg.com/236x/ea/13/d3/ea13d3aded34a5f15a740bfdb0f90b72.jpg
-    https://i.pinimg.com/236x/2f/fd/33/2ffd33994e7c273d453bbe0bada9fa55.jpg
-    https://avatars.mds.yandex.net/get-pdb/1604805/7ea9da4a-fc1a-4be8-8dd7-0c642bf8ed44/s1200
-    https://img-hw.xvideos.com/videos/profiles/profthumb/4d/e7/5f/kazuma_dk/profile_1_big.jpg
-    https://i.pinimg.com/280x280_RS/8e/6e/7b/8e6e7bff441d9411518498c880e70b4f.jpg
-    */
-    content: url('https://img-hw.xvideos.com/videos/profiles/profthumb/4d/e7/5f/kazuma_dk/profile_1_big.jpg');
+	/*
+	https://i.pinimg.com/236x/c3/23/f4/c323f4b37254ff1a2a18ef2e0c6f2f40--anime-sketch-image-manga.jpg
+	https://surgebook.com/uploads/user_174548/avatar/1j2234dmlh_thumb_340
+	https://i.pinimg.com/236x/fd/78/e8/fd78e80dfab8bc747b853c8b1533a93e.jpg
+	https://i.pinimg.com/236x/ea/13/d3/ea13d3aded34a5f15a740bfdb0f90b72.jpg
+	https://i.pinimg.com/236x/2f/fd/33/2ffd33994e7c273d453bbe0bada9fa55.jpg
+	https://avatars.mds.yandex.net/get-pdb/1604805/7ea9da4a-fc1a-4be8-8dd7-0c642bf8ed44/s1200
+	https://img-hw.xvideos.com/videos/profiles/profthumb/4d/e7/5f/kazuma_dk/profile_1_big.jpg
+	https://i.pinimg.com/280x280_RS/8e/6e/7b/8e6e7bff441d9411518498c880e70b4f.jpg
+	*/
+	content: url('https://img-hw.xvideos.com/videos/profiles/profthumb/4d/e7/5f/kazuma_dk/profile_1_big.jpg');
 }
 .friends-item {
-    transition: 0.4s;
+	transition: 0.4s;
 }
 .friends-item__avatar-wrap {
-    transition: 0.4s;
+	transition: 0.4s;
 }
 .friends-item:hover .friends-item__avatar-wrap {
-    transition: 0.4s;
-    transform: scale(1.2);
+	transition: 0.4s;
+	transform: scale(1.2);
 }
 .aside-user {
-    transition: 0.4s;
+	transition: 0.4s;
 }
 .aside-user:hover {
-    transition: 0.4s;
-    transform: scale(1.2);
+	transition: 0.4s;
+	transform: scale(1.2);
 }
 .section,
 .paper {
-    border-radius: 15px!important;
+	border-radius: 15px!important;
 }
 .footer.container {
-    margin-bottom: 25px!important;
+	margin-bottom: 25px!important;
 }
 .tooltip:hover:after {
-    border-radius: 20px;
+	border-radius: 20px;
 }
 .tabs__content_show .faq-item {
-    border-radius: 10px;
+	border-radius: 10px;
 }
